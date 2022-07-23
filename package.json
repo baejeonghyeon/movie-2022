@@ -16,7 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -24,7 +26,7 @@
       "react-app/jest"
     ]
   },
- 
+  "homepage": "http://baejeonghyeon.github.io/movie-2022",
   "browserslist": {
     "production": [
       ">0.2%",
